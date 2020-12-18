@@ -14,7 +14,7 @@ CS50’s Introduction to Artificial Intelligence with Python explores the concep
 | 6. | Neural Networks | Quiz5 |
 | 7. | Language | Quiz6 |
 
-###  The course also had a total of 7 Projects to be submitted to pass the course. These were:
+###  The Course also had a total of 7 Projects to be submitted to pass the course. These were:
 1. **Project 0**: Degrees and Tic-Tac-Toe
 2. **Project 1**: Knights and Minesweeper
 3. **Project 2**: PageRank and Heredity
@@ -22,3 +22,7 @@ CS50’s Introduction to Artificial Intelligence with Python explores the concep
 5. **Project 4**: Shopping and Nim
 6. **Project 5**: Traffic
 7. **Project 6**: Parser and Questions
+
+Taking this course has greatly improved my knowledge about how real world problems can be solved using computer and how we can approach these problems usnig Artificial Intelligence and Machine Learning.
+
+## Lance Soares
