@@ -18,17 +18,21 @@ Add knowledge to knowledge bases **knowledge0**, **knowledge1**, **knowledge2**,
 
 •	Puzzle 0 is the puzzle from the Background. It contains a single character, A.
 1. A says “I am both a knight and a knave.”
+
 •	Puzzle 1 has two characters: A and B.
 1. A says “We are both knaves.”
 2. B says nothing.
+
 •	Puzzle 2 has two characters: A and B.
 1. A says “We are the same kind.”
 2. B says “We are of different kinds.”
+
 •	Puzzle 3 has three characters: A, B, and C.
 1. A says either “I am a knight.” or “I am a knave.”, but you don’t know which.
 2. B says “A said ‘I am a knave.’”
 3. B then says “C is a knave.”
 4. C says “A is a knight.”
+
 In each of the above puzzles, each character is either a knight or a knave. Every sentence spoken by a knight is true, and every sentence spoken by a knave is false.
 
 
@@ -46,10 +50,13 @@ Complete the implementations of the Sentence class and the MinesweeperAI class i
 In the Sentence class, complete the implementations of **known_mines**, **known_safes**, **mark_mine**, and **mark_safe**.
 
 •	The known_mines function should return a set of all of the cells in self.cells that are known to be mines.
+
 •	The known_safes function should return a set of all the cells in self.cells that are known to be safe.
+
 •	The mark_mine function should first check to see if cell is one of the cells included in the sentence.
 1. If cell is in the sentence, the function should update the sentence so that cell is no longer in the sentence, but still represents a logically correct sentence given that cell is known to be a mine.
 2. If cell is not in the sentence, then no action is necessary.
+
 •	The mark_safe function should first check to see if cell is one of the cells included in the sentence.
 1. If cell is in the sentence, the function should update the sentence so that cell is no longer in the sentence, but still represents a logically correct sentence given that cell is known to be safe.
 2. If cell is not in the sentence, then no action is necessary.
@@ -64,10 +71,12 @@ In the MinesweeperAI class, complete the implementations of **add_knowledge**, *
 4. If, based on any of the sentences in self.knowledge, new cells can be marked as safe or as mines, then the function should do so.
 5. If, based on any of the sentences in self.knowledge, new sentences can be inferred (using the subset method described in the Background), then those sentences should be added to the knowledge base as well.
 6. Note that any time that you make any change to your AI’s knowledge, it may be possible to draw new inferences that weren’t possible before. Be sure that those new inferences are added to the knowledge base if it is possible to do so.
+
 •	make_safe_move should return a move (i, j) that is known to be safe.
 1. The move returned must be known to be safe, and not a move already made.
 2. If no safe move can be guaranteed, the function should return None.
 3. The function should not modify self.moves_made, self.mines, self.safes, or self.knowledge.
+
 •	make_random_move should return a random move (i, j).
 1. This function will be called if a safe move is not possible: if the AI doesn’t know where to move, it will choose to move randomly instead.
 2. The move must not be a move that has already been made.
